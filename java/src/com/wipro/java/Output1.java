@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.wipro.java;
 
 /**
@@ -18,19 +15,14 @@ public class Output1 {
     public void changeValue(int num) {
         this.num = num;
     }
-}
-
-/**
- * Main class to execute the program
- */
-  class Main {
 
     /**
+     * Main method to execute the program
      * @param args Command-line arguments
      */
     public static void main(String[] args) {
         Output1 obj = new Output1();  // Create an object of Output1
-        obj.changeValue(10);    // Change the value of num to 10
+        obj.changeValue(10);          // Change the value of num to 10
         System.out.println(obj.num);  // Print the value of num
     }
 }
