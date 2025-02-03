@@ -23,6 +23,19 @@ public class Developer extends Employee{
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		Employee employee=new Developer();
+		employee.setEmp_id(1234);;
+		employee.setName("Sagar");
+		employee.setEmail("sagarprashant068@gmail.com");
+		employee.setDepartment("Software");
+		employee.setSalary(50000);;
+		
+     System.out.println(employee.getEmp_id());
+     System.out.println(employee.getName());
+     System.out.println(employee.getEmail());
+     System.out.println(employee.getDepartment());
+     System.out.println(employee.getSalary());
 
 	}
 

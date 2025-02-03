@@ -15,8 +15,10 @@ public class Employee {
 	private String Name;  // name of the employee
 	private String email; // Email of the employee
 	private String Department; // Department of the employee
+	private float salary;  //salary of the employee
 	
 	
+
 	public int getEmp_id() {
 		return emp_id;
 	}
@@ -48,7 +50,14 @@ public class Employee {
 	public void setDepartment(String department) {
 		Department = department;
 	}
+	
+	public float getSalary() {
+		return salary;
+	}
 
+	public void setSalary(float salary) {
+		this.salary = salary;
+	}
 	
 	/**
 	 * 
