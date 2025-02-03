@@ -24,6 +24,9 @@ public class Developer extends Employee{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		// child object is instantiated from child constructor
+    	//parent class consumes the prop and behaviors of child class
+		
 		Employee employee=new Developer();
 		employee.setEmp_id(1234);;
 		employee.setName("Sagar");
