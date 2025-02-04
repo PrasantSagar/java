@@ -1,12 +1,12 @@
 package com.wipro.java.oops.ExceptionalHandling;
 
-public class JavaException {
+public class UncheckedException {
     public static void main(String[] args) {
     	
         try {
             int num1 = 20;
             int num2 = 0;
-            int result = num1 / num2; // This will throw Exception
+            int result = num1 / num2; // This will throw Arithmetic Exception
             System.out.println("Result: " + result);
         } 
         
