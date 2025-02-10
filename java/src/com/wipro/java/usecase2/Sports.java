@@ -150,6 +150,15 @@ class SportsManager {
         return sportsList.stream()
                 .collect(Collectors.groupingBy(Sport::getType, Collectors.counting()));
     }
+
+    //  Get total number of players in all sports**
+    public int getTotalPlayers() {
+        if (sportsList.isEmpty()) {
+            System.out.println("No sports available to calculate total players.");
+            return 0;
+        }
+        return sportsList.stream().mapToInt(Sport::getPlayers).sum();
+    }
 }
 
 // Main class to test the implementation with Exception Handling
@@ -217,5 +226,8 @@ public class Sports {
         System.out.println("\nCounting Sports by Type:");
         Map<String, Long> sportCounts = manager.countSportsByType();
         sportCounts.forEach((type, count) -> System.out.println(type + ": " + count));
+
+        // **New Feature: Display total number of players**
+        System.out.println("\nTotal Number of Players in All Sports: " + manager.getTotalPlayers());
     }
 }
